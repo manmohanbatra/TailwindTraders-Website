@@ -24,7 +24,7 @@ steps:
   inputs:
     azureSubscriptionEndpoint: $(azureSubscription)
     azureContainerRegistry: $(acr).azurecr.io
-    dockerFile: Source/Tailwind.Traders.Web/Dockerfile
+    dockerFile: TailwindTraders.Website/Source/Tailwind.Traders.Web/Dockerfile
     arguments: '-t $(acr).azurecr.io/$(ImageName):$(Build.BuildId)'
     imageName: '$(ImageName):$(Build.BuildId)'
     includeLatestTag: true
