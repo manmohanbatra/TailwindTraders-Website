@@ -6,9 +6,10 @@ variables:
 
 steps:
 - task: AzureResourceGroupDeployment@2
-  displayName: Azure Deployment
+  displayName: Azure Create or Update Resource group and Deployment
   inputs:
     azureSubscription: $(azureSubscription)
+    action: 'Create Or Update Resource Group' 
     resourceGroupName: $(resourcegroup)
     location: $(location)
     csmFile: TailwindTraders.Website/Deploy/deployment.json
