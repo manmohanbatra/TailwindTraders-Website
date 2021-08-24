@@ -5,13 +5,14 @@ variables:
   ImageName: website
 
 steps:
-- task: AzureResourceGroupDeployment@2
+- task: AzureResourceGroupDeployment@1
   displayName: Azure Create or Update Resource group
   inputs:
-    azureSubscription: $(azureSubscription)
-    action: 'Create Or Update Resource Group' 
-    resourceGroupName: $(resourcegroup)
-    location: $(location)
+    ConnectedServiceName: 'TTWeb'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: '$(resourcegroup)'
+    location: '$(location)'
+    deploymentMode: 'Incremental'
 
 - task: AzureResourceGroupDeployment@2
   displayName: Azure Deployment
