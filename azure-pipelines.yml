@@ -10,7 +10,7 @@ steps:
     azureSubscription: '$(azureSubscription)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az group create -l $(location) -n $(resource group)'
+    inlineScript: 'az group create -l $(location) -n $(resourcegroup)'
 
 - task: AzureResourceGroupDeployment@2
   displayName: Azure Deployment
