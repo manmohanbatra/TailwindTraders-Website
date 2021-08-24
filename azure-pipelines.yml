@@ -1,5 +1,5 @@
 variables:
-  azureSubscription: ttweb
+  azureSubscription: TTWeb
   resourcegroup: TailwindTraderWeb
   location: westus
   ImageName: website
@@ -7,7 +7,7 @@ variables:
 steps:
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'TTWeb'
+    azureSubscription: $(azureSubscription)
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az group create --location $(location) --resource-group $(resource group)'
