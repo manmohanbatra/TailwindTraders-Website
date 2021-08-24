@@ -5,7 +5,12 @@ variables:
   ImageName: website
 
 steps:
-
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'TTWeb'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az group create --location $(location) --resource-group $(resource group)'
 
 - task: AzureResourceGroupDeployment@2
   displayName: Azure Deployment
