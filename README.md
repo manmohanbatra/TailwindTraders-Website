@@ -2,9 +2,9 @@
 
 ![Tailwind Traders Website](Documents/Images/Website.png)
 
-#[![Build status](https://dev.azure.com/TailwindTraders/Website/_apis/build/status/Website-CI)](https://dev.azure.com/TailwindTraders/Website/_build?definitionId=22)
+#(https://dev.azure.com/TailwindTraders/Website/_apis/build/status/Website-CI)](https://dev.azure.com/TailwindTraders/Website/_build?definitionId=22)
 
-[![Build Status](https://dev.azure.com/shauryabatra2000/TailwindsARM/_apis/build/status/manmohanbatra.TailwindTraders-Website?branchName=main)](https://dev.azure.com/shauryabatra2000/TailwindsARM/_build/latest?definitionId=74&branchName=main)
+[![Build Status]https://dev.azure.com/shauryabatra2000/TailwindsARM/_build/latest?definitionId=74&branchName=main)
 
 You can take a look at our live running website following this address: [https://tailwindtraders.com](https://tailwindtraders.com)
 
